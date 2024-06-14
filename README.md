@@ -1,7 +1,9 @@
 # Pyro Snippets
-<center>
-<img src='./images/logo.jpeg' alt='logo' height=250px width=250px >
-</center>
+
+<p align="center">
+  <img src="./images/logo.jpeg" alt="logo" height="450px" width="450px">
+</p>
+
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)
 [![Downloads](https://img.shields.io/visual-studio-marketplace/d/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)
