@@ -1,0 +1,237 @@
+{
+    // Bot
+    "Create Bot": {
+        "prefix": "pyroBot",
+        "body": [
+            "from pyrogram import Client, filters",
+            "import os",
+            "",
+            "API_HASH = os.getenv(\"${API_HASH}\")",
+            "API_ID = os.getenv(\"${API_ID}\")",
+            "BOT_TOKEN = os.getenv(\"${BOT_TOKEN}\")",
+            "",
+            "app = Client(",
+            "    \"${1:BugHunterBots}\",",
+            "    bot_token=\"${2:TOKEN}\",",
+            "    api_id=${3:API_ID},",
+            "    api_hash=\"${4:API_HASH}\"",
+            ")",
+            "",
+            "app.run()"
+        ],
+        "description": "Create a Pyrogram bot"
+    },
+    // buttons
+    "Inline Button": {
+        "prefix": "pyroButton",
+        "body": [
+            "button = InlineKeyboardMarkup([",
+            "    [",
+            "        InlineKeyboardButton(",
+            "            text=\"${1:Button Text}\",",
+            "            ${2:callback_data=\"callback_data\" ",
+            "            # or url=\"https://github.com/nuhmanpk\"}",
+            "        )",
+            "    ]",
+            "])",
+            "",
+        ],
+        "description": "Create an inline button"
+    },
+    "Inline Button Group (2x2)": {
+        "prefix": "pyroButtonGroup2x2",
+        "body": [
+            "from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton",
+            "",
+            "buttons = InlineKeyboardMarkup([",
+            "    [",
+            "        InlineKeyboardButton(text=\"${1:Button 1}\", ${2:callback_data=\"callback_data1\"}),",
+            "        InlineKeyboardButton(text=\"${3:Button 2}\", ${4:callback_data=\"callback_data2\"})",
+            "    ],",
+            "    [",
+            "        InlineKeyboardButton(text=\"${5:Button 3}\", ${6:callback_data=\"callback_data3\"}),",
+            "        InlineKeyboardButton(text=\"${7:Button 4}\", ${8:callback_data=\"callback_data4\"})",
+            "    ]",
+            "])",
+            ""
+        ],
+        "description": "Create an inline button group (2x2)"
+    },
+    "Inline Button Group (2 3 2)": {
+        "prefix": "pyroButtonGroup2_3_2",
+        "body": [
+            "from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton",
+            "",
+            "buttons = InlineKeyboardMarkup([",
+            "    [",
+            "        InlineKeyboardButton(text=\"${1:Button 1}\", ${2:callback_data=\"callback_data1\"}),",
+            "        InlineKeyboardButton(text=\"${3:Button 2}\", ${4:callback_data=\"callback_data2\"})",
+            "    ],",
+            "    [",
+            "        InlineKeyboardButton(text=\"${5:Button 3}\", ${6:callback_data=\"callback_data3\"}),",
+            "        InlineKeyboardButton(text=\"${7:Button 4}\", ${8:callback_data=\"callback_data4\"}),",
+            "        InlineKeyboardButton(text=\"${9:Button 5}\", ${10:callback_data=\"callback_data5\"})",
+            "    ],",
+            "    [",
+            "        InlineKeyboardButton(text=\"${11:Button 6}\", ${12:callback_data=\"callback_data6\"}),",
+            "        InlineKeyboardButton(text=\"${13:Button 7}\", ${14:callback_data=\"callback_data7\"})",
+            "    ]",
+            "])",
+            ""
+        ],
+        "description": "Create an inline button group (2 3 2)"
+    },
+    "Inline Button Group (3x3)": {
+        "prefix": "pyroButtonGroup3x3",
+        "body": [
+            "from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton",
+            "",
+            "buttons = InlineKeyboardMarkup([",
+            "    [",
+            "        InlineKeyboardButton(text=\"${1:Button 1}\", ${2:callback_data=\"callback_data1\"}),",
+            "        InlineKeyboardButton(text=\"${3:Button 2}\", ${4:callback_data=\"callback_data2\"}),",
+            "        InlineKeyboardButton(text=\"${5:Button 3}\", ${6:callback_data=\"callback_data3\"})",
+            "    ],",
+            "    [",
+            "        InlineKeyboardButton(text=\"${7:Button 4}\", ${8:callback_data=\"callback_data4\"}),",
+            "        InlineKeyboardButton(text=\"${9:Button 5}\", ${10:callback_data=\"callback_data5\"}),",
+            "        InlineKeyboardButton(text=\"${11:Button 6}\", ${12:callback_data=\"callback_data6\"})",
+            "    ],",
+            "    [",
+            "        InlineKeyboardButton(text=\"${13:Button 7}\", ${14:callback_data=\"callback_data7\"}),",
+            "        InlineKeyboardButton(text=\"${15:Button 8}\", ${16:callback_data=\"callback_data8\"}),",
+            "        InlineKeyboardButton(text=\"${17:Button 9}\", ${18:callback_data=\"callback_data9\"})",
+            "    ]",
+            "])",
+            "",
+        ],
+        "description": "Create an inline button group (3x3)"
+    },
+    // callback
+    "Callback Query Handler": {
+        "prefix": "pyroCallbackHandler",
+        "body": [
+            "",
+            "@app.on_callback_query()",
+            "async def ${1:callback_handler}(client: Client, callback_query: CallbackQuery):",
+            "    await callback_query.answer(\"${2:Callback data received!}\")",
+            ""
+        ],
+        "description": "Create a callback query handler"
+    },
+    "Close Button": {
+        "prefix": "pyroCloseButton",
+        "body": [
+            "",
+            "back = InlineKeyboardMarkup([",
+            "[InlineKeyboardButton('⬅️ back', callback_data='cb_back')]",
+            "])",
+            "",
+            "",
+            "",
+            "",
+            "@app.on_callback_query(filters.regex('cb_back'))",
+            "async def back_to_main_menu(client, callback_query):",
+            "    await callback_query.answer()",
+            "    await callback_query.message.delete()"
+        ],
+        "description": "Create a callback query handler for close button"
+    },
+    "Next Button": {
+        "prefix": "pyroNextButton",
+        "body": [
+            "next_button = InlineKeyboardMarkup([",
+            "    [InlineKeyboardButton('➡️ Next', callback_data='cb_next')]",
+            "])",
+            "",
+            "@app.on_callback_query(filters.regex('cb_next'))",
+            "async def handle_next(client, callback_query):",
+            "    await callback_query.answer()",
+            "    ${1:# Handle next logic}"
+        ],
+        "description": "Create a callback query handler for a next button"
+    },
+    "Previous Button": {
+        "prefix": "pyroPrevButton",
+        "body": [
+            "previous_button = InlineKeyboardMarkup([",
+            "    [InlineKeyboardButton('⬅️ Previous', callback_data='cb_previous')]",
+            "])",
+            "",
+            "@app.on_callback_query(filters.regex('cb_previous'))",
+            "async def handle_previous(client, callback_query):",
+            "    await callback_query.answer()",
+            "    ${1:# Handle previous logic}"
+        ],
+        "description": "Create a callback query handler for a previous button"
+    },
+    "Confirm Button": {
+        "prefix": "pyroConfirmButton",
+        "body": [
+            "confirm_button = InlineKeyboardMarkup([",
+            "    [InlineKeyboardButton('✅ Confirm', callback_data='cb_confirm')]",
+            "])",
+            "",
+            "@app.on_callback_query(filters.regex('cb_confirm'))",
+            "async def handle_confirm(client, callback_query):",
+            "    await callback_query.answer()",
+            "    ${1:# Handle confirm logic}"
+        ],
+        "description": "Create a callback query handler for a confirm button"
+    },
+    "Cancel Button": {
+        "prefix": "pyroCancelButton",
+        "body": [
+            "cancel_button = InlineKeyboardMarkup([",
+            "    [InlineKeyboardButton('❌ Cancel', callback_data='cb_cancel')]",
+            "])",
+            "",
+            "@app.on_callback_query(filters.regex('cb_cancel'))",
+            "async def handle_cancel(client, callback_query):",
+            "    await callback_query.answer()",
+            "    ${1:# Handle cancel logic}"
+        ],
+        "description": "Create a callback query handler for a cancel button"
+    },
+    // commands
+    "Start Command Handler": {
+        "prefix": "pyroStart",
+        "body": [
+            "@app.on_message(filters.command(\"start\"))",
+            "async def start(client, message):",
+            "    await message.reply_text(\"Welcome to ${1:Your Bot Name}!\")",
+            "    ${2:# Additional code here if needed}"
+        ],
+        "description": "Handle the /start command"
+    },
+    "Help Command Handler": {
+        "prefix": "pyroHelp",
+        "body": [
+            "@app.on_message(filters.command(\"help\"))",
+            "async def help(client, message):",
+            "    await message.reply_text(\"Here's some help information.\")",
+            "    ${1:# Additional code here if needed}"
+        ],
+        "description": "Handle the /help command"
+    },
+    "About Command Handler": {
+        "prefix": "pyroAbout",
+        "body": [
+            "@app.on_message(filters.command(\"about\"))",
+            "async def about(client, message):",
+            "    await message.reply_text(\"This bot is created by ${1:Your Name}.\")",
+            "    ${2:# Additional code here if needed}"
+        ],
+        "description": "Handle the /about command"
+    },
+    // env
+    "Import Data from ENV": {
+        "prefix": "pyroENV",
+        "body": [
+            "API_HASH = os.getenv(\"${API_HASH}\")",
+            "API_ID = os.getenv(\"${API_ID}\")",
+            "BOT_TOKEN = os.getenv(\"${BOT_TOKEN}\")"
+        ],
+        "description": "Handle the /about command"
+    }
+}

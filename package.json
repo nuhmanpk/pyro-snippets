@@ -1,0 +1,20 @@
+{
+  "name": "pyrosnippets",
+  "displayName": "pyrosnippets",
+  "description": "Unlock the full potential of Pyrogram with PyroSnippets, a comprehensive collection of ready-to-use code snippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
