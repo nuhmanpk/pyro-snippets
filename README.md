@@ -1,7 +1,7 @@
 # Pyro Snippets
 
 <p align="center">
-  <img src="./images/logo.jpeg" alt="logo" height="450px" width="450px">
+  <img src="./images/logo2.png" alt="logo" height="450px" width="450px">
 </p>
 
 
@@ -60,5 +60,10 @@ If you have any suggestions, feature requests, or issues to report, feel free to
 This extension is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
 ---
+
+<p align="center">
+  <img src="./images/logo.jpeg" alt="logo" height="450px" width="450px">
+</p>
+
 
 **Happy Coding!** 🚀
