@@ -27,23 +27,23 @@ Welcome to Pyro Snippets, an extension for Visual Studio Code that enhances your
 
 ## Snippets
 
-| Snippet Name                | Prefix             | Description                                                   |
-|-----------------------------|--------------------|---------------------------------------------------------------|
-| Create Bot                  | `pyroBot`          | Create a Pyrogram bot                                         |
-| Inline Button               | `pyroButton`       | Create an inline button                                       |
-| Inline Button Group (2x2)   | `pyroButtonGroup2x2` | Create an inline button group (2x2)                            |
-| Inline Button Group (2 3 2) | `pyroButtonGroup2_3_2` | Create an inline button group (2 3 2)                           |
-| Inline Button Group (3x3)   | `pyroButtonGroup3x3` | Create an inline button group (3x3)                            |
-| Callback Query Handler      | `pyroCallbackHandler` | Create a callback query handler                                |
-| Close Button                | `pyroCloseButton`  | Create a callback query handler for close button              |
-| Next Button                 | `pyroNextButton`   | Create a callback query handler for a next button             |
-| Previous Button             | `pyroPrevButton`   | Create a callback query handler for a previous button         |
-| Confirm Button              | `pyroConfirmButton` | Create a callback query handler for a confirm button           |
-| Cancel Button               | `pyroCancelButton` | Create a callback query handler for a cancel button           |
-| Start Command Handler       | `pyroStart`        | Handle the /start command                                     |
-| Help Command Handler        | `pyroHelp`         | Handle the /help command                                      |
-| About Command Handler       | `pyroAbout`        | Handle the /about command                                     |
-| Import Data from ENV        | `pyroENV`          | Import API keys and tokens from environment variables         |
+| S.No | Snippet Name                | Prefix             | Description                                             |
+|---|--------------------------|--------------------|---------------------------------------------------------------|
+| 1 | Create Bot                  | `pyroBot`          | Create a Pyrogram bot                                      |
+| 2 | Inline Button               | `pyroButton`       | Create an inline button                                    |
+| 3 | Inline Button Group (2x2)   | `pyroButtonGroup2x2` | Create an inline button group (2x2)                      |
+| 4 | Inline Button Group (2 3 2) | `pyroButtonGroup2_3_2` | Create an inline button group (2 3 2)                  |
+| 5 | Inline Button Group (3x3)   | `pyroButtonGroup3x3` | Create an inline button group (3x3)                      |
+| 6 | Callback Query Handler      | `pyroCallbackHandler` | Create a callback query handler                         |
+| 7 | Close Button                | `pyroCloseButton`  | Create a callback query handler for close button           |
+| 8 | Next Button                 | `pyroNextButton`   | Create a callback query handler for a next button          |
+| 9 | Previous Button             | `pyroPrevButton`   | Create a callback query handler for a previous button      |
+| 10 | Confirm Button              | `pyroConfirmButton` | Create a callback query handler for a confirm button     |
+| 11 | Cancel Button               | `pyroCancelButton` | Create a callback query handler for a cancel button       |
+| 12 | Start Command Handler       | `pyroStart`        | Create /start command                                     |
+| 13 | Help Command Handler        | `pyroHelp`         | Create /help command                                      |
+| 14 | About Command Handler       | `pyroAbout`        | Create /about command                                     |
+| 15 | Import Data from ENV        | `pyroENV`          | Import API keys and tokens from environment variables     |
 
 ## Requirements
 
