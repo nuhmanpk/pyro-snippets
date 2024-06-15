@@ -18,6 +18,10 @@ Welcome to Pyro Snippets, an extension for Visual Studio Code that enhances your
 
 ## Features
 
+<p align="center">
+  <img src="./images/demo.gif" alt="demo-video">
+</p>
+
 - **Code Snippets**: Quickly insert code templates for creating Pyrogram clients, handling commands, and managing inline buttons.
 - **Enhanced Productivity**: Reduce boilerplate code and focus more on building your Pyrogram bots.
 - **Customizable**: Easily modify and expand snippets to fit your specific needs.
