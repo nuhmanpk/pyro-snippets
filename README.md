@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./images/logo2.png" alt="logo" height="450px" width="450px">
+  <img src="./images/logo2.png" alt="logo" max-height="450px" max-width="450px">
 </p>
 
 
@@ -73,7 +73,7 @@ This extension is licensed under the MIT License. See the [LICENSE](./LICENSE) f
 
 <p align="center">
   <a href="https://t.me/bughunterbots" target="_blank">
-    <img src="./images/logo.jpeg" alt="logo" height="450px" width="450px">
+    <img src="./images/logo.jpeg" alt="logo" max-height="450px" max-width="450px">
   </a>
 </p>
 
