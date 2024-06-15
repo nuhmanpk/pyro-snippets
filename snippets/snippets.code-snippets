@@ -6,15 +6,15 @@
             "from pyrogram import Client, filters",
             "import os",
             "",
-            "API_HASH = os.getenv(\"${API_HASH}\")",
-            "API_ID = os.getenv(\"${API_ID}\")",
-            "BOT_TOKEN = os.getenv(\"${BOT_TOKEN}\")",
+            "API_HASH = os.getenv(\"${1:API_HASH}\")",
+            "API_ID = os.getenv(\"${2:API_ID}\")",
+            "BOT_TOKEN = os.getenv(\"${3:BOT_TOKEN}\")",
             "",
             "app = Client(",
-            "    \"${1:BugHunterBots}\",",
-            "    bot_token=\"${2:TOKEN}\",",
-            "    api_id=${3:API_ID},",
-            "    api_hash=\"${4:API_HASH}\"",
+            "    \"${4:BugHunterBots}\",",
+            "    bot_token=\"${5:TOKEN}\",",
+            "    api_id=${6:API_ID},",
+            "    api_hash=\"${7:API_HASH}\"",
             ")",
             "",
             "app.run()"
@@ -228,9 +228,9 @@
     "Import Data from ENV": {
         "prefix": "pyroENV",
         "body": [
-            "API_HASH = os.getenv(\"${API_HASH}\")",
-            "API_ID = os.getenv(\"${API_ID}\")",
-            "BOT_TOKEN = os.getenv(\"${BOT_TOKEN}\")"
+            "API_HASH = os.getenv(\"${1:API_HASH}\")",
+            "API_ID = os.getenv(\"${2:API_ID}\")",
+            "BOT_TOKEN = os.getenv(\"${3:BOT_TOKEN}\")"
         ],
         "description": "Handle the /about command"
     }
