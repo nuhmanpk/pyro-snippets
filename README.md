@@ -1,4 +1,4 @@
-# Pyro Snippets
+## Pyro Snippets - Enhancing Developer Experience in Telegram Bot Development
 
 <p align="center">
   <strong>Elevate your Pyrogram Developer Experience with PyroSnippets!</strong>
@@ -72,3 +72,5 @@ This extension is licensed under the MIT License. See the [LICENSE](./LICENSE) f
 
 
 **Happy Coding!** 🚀
+
+<sub>Built with ❤️ by <a href="https://github.com/nuhmanpk">Nuhman Pk</a> © 2024</sub>
