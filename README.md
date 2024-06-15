@@ -53,6 +53,7 @@ Welcome to Pyro Snippets, an extension for Visual Studio Code that enhances your
 | 13 | Help Command Handler        | `pyroHelp`         | Create /help command                                      |
 | 14 | About Command Handler       | `pyroAbout`        | Create /about command                                     |
 | 15 | Import Data from ENV        | `pyroENV`          | Import API keys and tokens from environment variables     |
+| 16 | Missing Something important? | -                  | <a href="https://github.com/nuhmanpk/pyro-snippets/fork" target="_blank">Click here to fork and contribute!</a> |
 
 ## Requirements
 
@@ -71,8 +72,15 @@ This extension is licensed under the MIT License. See the [LICENSE](./LICENSE) f
 ---
 
 <p align="center">
-  <img src="./images/logo.jpeg" alt="logo" height="450px" width="450px">
+  <a href="https://t.me/bughunterbots" target="_blank">
+    <img src="./images/logo.jpeg" alt="logo" height="450px" width="450px">
+  </a>
 </p>
+
+<p align="center">
+  <a href="https://t.me/bughunterbots" target="_blank">Follow @bughunterbots on Telegram</a>
+</p>
+
 
 
 **Happy Coding!** 🚀
