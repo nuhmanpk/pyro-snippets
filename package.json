@@ -2,13 +2,24 @@
   "name": "pyrosnippets",
   "displayName": "PyroSnippets - Pyrogram Telegram Bot Code Snippets",
   "description": "Unlock the full potential of Pyrogram with PyroSnippets, a comprehensive collection of ready-to-use code snippets",
+  "publisher": "nuhmanpk",
+  "icon": "images/logo-icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.90.0"
   },
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Programming Languages",
+    "Extension Packs",
+    "Linters",
+    "Formatters",
+    "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nuhmanpk/pyro-snippets.git"
+  }
   "contributes": {
     "snippets": [
       {
