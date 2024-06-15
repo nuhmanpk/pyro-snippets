@@ -9,10 +9,10 @@
 </p>
 
 
-
-[![Version](https://img.shields.io/visual-studio-marketplace/v/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)
-[![Rating](https://img.shields.io/visual-studio-marketplace/stars/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)
+<!-- Uncomment on Release -->
+<!--[![Version](https://img.shields.io/visual-studio-marketplace/v/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)-->
+<!--[![Downloads](https://img.shields.io/visual-studio-marketplace/d/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)-->
+<!--[![Rating](https://img.shields.io/visual-studio-marketplace/stars/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)-->
 
 Welcome to Pyro Snippets, an extension for Visual Studio Code that enhances your development with Pyrogram by providing code snippets for common tasks and features.
 
