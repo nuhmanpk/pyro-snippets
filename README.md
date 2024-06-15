@@ -1,8 +1,13 @@
 # Pyro Snippets
 
 <p align="center">
+  <strong>Elevate your Pyrogram Developer Experience with PyroSnippets!</strong>
+</p>
+
+<p align="center">
   <img src="./images/logo2.png" alt="logo" height="450px" width="450px">
 </p>
+
 
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/<extension-id>.svg)](https://marketplace.visualstudio.com/items?itemName=<extension-id>)
