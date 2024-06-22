@@ -27,5 +27,21 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ]
+  },
+  ,
+  "keywords": [
+    "Pyrogram",
+    "Telegram",
+    "Bot",
+    "Snippets",
+    "Code Snippets",
+    "Python",
+    "Pyrogram Bot",
+    "Telegram Bot",
+    "Developer Tools",
+    "Chatbot"
+  ],
+  "sponsor":{
+    "url":"https://github.com/sponsors/nuhmanpk"
   }
 }
