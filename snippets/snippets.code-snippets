@@ -233,5 +233,19 @@
             "BOT_TOKEN = os.getenv(\"${3:BOT_TOKEN}\")"
         ],
         "description": "Handle the /about command"
-    }
+    },
+    // basics
+    "Welcome Message on Join": {
+        "prefix": "pyroWelcome",
+        "body": [
+            "from pyrogram import Client, filters",
+            "from pyrogram.types import ChatMemberUpdated",
+            "",
+            "@app.on_chat_member_updated()",
+            "async def welcome(client, chat_member_updated: ChatMemberUpdated):",
+            "    if chat_member_updated.new_chat_member.status == 'member':",
+            "        await client.send_message(chat_member_updated.chat.id, 'Welcome to the group, ${1:username}!')"
+        ],
+        "description": "Sends a welcome message when a user joins a group"
+    },
 }
